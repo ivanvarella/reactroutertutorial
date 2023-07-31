@@ -9,7 +9,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Contact from './routes/Contact';
+import Contact from './routes/contact';
 
 //CSS
 import './index.css'
