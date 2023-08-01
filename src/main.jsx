@@ -9,7 +9,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Contact from './routes/contact';
+import Contact, { loader as contactLoader, } from './routes/contact';
 
 //CSS
 import './index.css'
@@ -26,6 +26,7 @@ const router = createBrowserRouter([
       {
         path: "contacts/:contactId",
         element: <Contact />,
+        loader: contactLoader,
       },
     ],
   },
